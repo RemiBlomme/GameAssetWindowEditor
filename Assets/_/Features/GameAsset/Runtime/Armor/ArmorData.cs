@@ -1,20 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    public class ArmorData : MonoBehaviour
+    [CreateAssetMenu]
+    public class ArmorData : ScriptableObject   
     {
-        #region Public Members
-        #endregion
+        public enum ArmorTypes
+        {
+            None,
+            General,
+            Magic,
+            Light,
+            Heavy,
+            SmallShield,
+            BigShield
+        }
 
+        public enum EquipmentTypes
+        {
+            Shield,
+            Head,
+            Chest,
+            Legs
+        }
 
-        #region Unity API
-        #endregion
+        public string m_name;
+        public Sprite m_icon;
+        public string m_description;
 
+        public ArmorTypes m_armorType;
+        public EquipmentTypes m_equipmentType;
+        public int m_price;
 
-        #region Private and Protected
-        #endregion
+        public int m_attack;
+        public int m_agility;
+        public int m_defense;
+        public int m_luck;
+        public int m_attackM;
+        public int m_HPMax;
+        public int m_DefenseM;
+        public int m_MPMax;
+
+        private void OnEnable()
+        {
+
+        }
     }
 }
