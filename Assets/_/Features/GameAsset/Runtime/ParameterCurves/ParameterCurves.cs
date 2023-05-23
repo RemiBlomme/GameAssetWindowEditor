@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    public class ParameterCurve 
+    public class ParameterCurves
     {
 
         #region Public Members
@@ -17,6 +17,13 @@ namespace GameAsset.Runtime
         public int[] m_defenseMValue;
         public int[] m_agilityValue;
         public int[] m_luckValue;
+
+        // -----> meme affichage pour chaque parametre (hp, mp etc)
+        // -----> faire un générateur de courbe avec parametres d'entrés modulaire (niveau, Valeur)
+
+        
+
+        
 
 
         #endregion
