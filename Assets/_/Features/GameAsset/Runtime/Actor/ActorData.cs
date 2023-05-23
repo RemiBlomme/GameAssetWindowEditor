@@ -20,11 +20,11 @@ namespace GameAsset.Runtime
         public Sprite[] m_characterSprites;
         public Sprite m_fightingSprite;
         //[Header("Initial Equipment")]
-        // public WeaponData m_weapon; // TODO change variable type
-        // public ShieldData m_shield; // TODO change variable type
-        // public HeadData m_head; // TODO change variable type
-        // public BodyData m_bodies; // TODO change variable type
-        // public AccessoryData m_accessories; // TODO change variable type
+        //public WeaponData m_weapon; // TODO change variable type
+        //public ShieldData m_shield; // TODO change variable type
+        //public HeadData m_head; // TODO change variable type
+        //public BodyData m_bodies; // TODO change variable type
+        //public AccessoryData m_accessories; // TODO change variable type
 
 
         #endregion
