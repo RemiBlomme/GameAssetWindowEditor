@@ -15,7 +15,7 @@ MonoBehaviour:
   m_name: The Big Bonk
   m_description: Bonk
   m_icon: {fileID: 0}
-  m_type: {fileID: 11400000, guid: 833fc292dcfbe8944bd655194e7053a7, type: 2}
+  m_type: {fileID: 11400000, guid: cdc66cb8709984743928b71b4153e92a, type: 2}
   m_price: 100
   m_damage: 5
   m_defense: 1

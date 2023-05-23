@@ -8,12 +8,14 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
-        public string m_name, m_description;
-        public Texture m_icon;
-        public WeaponTypeData m_type;
-        public int m_price;
+        //  public ParameterChange m_change;
 
-        public int m_damage, m_defense, m_magicDamage, m_magicDefense, m_agility, m_luck, m_maxHP, m_maxMP;
+        //public string m_name, m_description;
+        //public Texture m_icon;
+        //public WeaponTypeData m_type;
+        //public int m_price;
+
+        //  public int m_damage, m_defense, m_magicDamage, m_magicDefense, m_agility, m_luck, m_maxHP, m_maxMP;
 
         #endregion Public Members
 

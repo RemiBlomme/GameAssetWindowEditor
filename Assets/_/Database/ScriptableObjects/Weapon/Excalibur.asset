@@ -15,7 +15,7 @@ MonoBehaviour:
   m_name: Excalibur
   m_description: The Legendary Sword
   m_icon: {fileID: 0}
-  m_type: {fileID: 11400000, guid: e975b0b3a2f8f7742a12b1a54014e05f, type: 2}
+  m_type: {fileID: 11400000, guid: e1ba6fd38167e7d4c88981737efb8910, type: 2}
   m_price: 1000
   m_damage: 20
   m_defense: 10
