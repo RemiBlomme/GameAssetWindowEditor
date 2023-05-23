@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
+using UnityEditor.PackageManager.UI;
 
 namespace GameAsset.Runtime
 {
@@ -13,6 +14,7 @@ namespace GameAsset.Runtime
         {
             var window = GetWindow<ArmorWindowOpener>();
             window.titleContent = new GUIContent("Armors", "Armors and stuff");
+            
         }
 
         [OnOpenAsset]
@@ -26,17 +28,29 @@ namespace GameAsset.Runtime
             return false;
         }
 
+        Vector2 scrollPosition;
         private void OnGUI()
         {
+           
+
+            float _windowWidth = position.width;
+            float _windowHeight = position.height;
             string[] guids = AssetDatabase.FindAssets("t:ArmorData");
-
-
+            scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUILayout.Width(_windowWidth), GUILayout.Height(_windowHeight));
+            GUILayout.BeginVertical();
             foreach (string guid in guids)
             {
+                GUILayout.BeginHorizontal();
                 var assetPath = AssetDatabase.GUIDToAssetPath(guid);
                 var currentSO = AssetDatabase.LoadAssetAtPath(assetPath, typeof(ArmorData)) as ArmorData;
                 GUILayout.Label($"Found: {currentSO.m_name}");
+                GUILayout.Box(currentSO.m_icon);
+                GUILayout.EndHorizontal();
+               
             }
+            GUILayout.EndVertical();
+            GUILayout.EndScrollView();
+          
         }
     }
 }

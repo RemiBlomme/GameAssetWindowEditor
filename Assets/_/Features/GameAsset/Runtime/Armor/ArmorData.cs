@@ -25,7 +25,7 @@ namespace GameAsset.Runtime
         }
 
         public string m_name;
-        public Sprite m_icon;
+        public Texture m_icon;
         public string m_description;
 
         public ArmorTypes m_armorType;
