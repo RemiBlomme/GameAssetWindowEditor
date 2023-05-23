@@ -1,19 +1,15 @@
-using GameAsset.Runtime;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
     [CreateAssetMenu]
-    public class WeaponData : ScriptableObject
+    public class WeaponTypeData : ScriptableObject
     {
         #region Public Members
 
-        public string m_name, m_description;
-        public Texture m_icon;
-        public WeaponTypeData m_type;
-        public int m_price;
-
-        public int m_damage, m_defense, m_magicDamage, m_magicDefense, m_agility, m_luck, m_maxHP, m_maxMP;
+        public string m_name;
 
         #endregion Public Members
 
