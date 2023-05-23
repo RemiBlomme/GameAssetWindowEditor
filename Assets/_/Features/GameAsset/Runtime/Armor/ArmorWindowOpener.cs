@@ -31,24 +31,37 @@ namespace GameAsset.Runtime
         Vector2 scrollPosition;
         private void OnGUI()
         {
-           
-
             float _windowWidth = position.width;
             float _windowHeight = position.height;
             string[] guids = AssetDatabase.FindAssets("t:ArmorData");
+
             scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUILayout.Width(_windowWidth), GUILayout.Height(_windowHeight));
+            GUILayout.BeginArea(new Rect(0, 0, _windowWidth/4, _windowHeight));
             GUILayout.BeginVertical();
+          
             foreach (string guid in guids)
             {
-                GUILayout.BeginHorizontal();
+
                 var assetPath = AssetDatabase.GUIDToAssetPath(guid);
                 var currentSO = AssetDatabase.LoadAssetAtPath(assetPath, typeof(ArmorData)) as ArmorData;
-                GUILayout.Label($"Found: {currentSO.m_name}");
-                GUILayout.Box(currentSO.m_icon);
-                GUILayout.EndHorizontal();
-               
+
+                if (GUILayout.Button(currentSO.m_name))
+                {
+                    GUILayout.BeginArea(new Rect(0, 0, _windowWidth*(3/4),_windowHeight));
+
+                    GUILayout.Label(currentSO.m_name);
+                    GUILayout.Label(currentSO.m_description);
+                    GUILayout.Label(currentSO.m_price.ToString());
+                    GUILayout.Label(currentSO.m_name);
+                    GUILayout.Label(currentSO.m_name);
+                    GUILayout.Label(currentSO.m_name);
+
+                    GUILayout.EndArea();
+                };             
             }
+
             GUILayout.EndVertical();
+            GUILayout.EndArea();
             GUILayout.EndScrollView();
           
         }

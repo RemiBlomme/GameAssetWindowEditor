@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3e4a9aaa8f1fa4687b798d50ab66b1, type: 3}
   m_Name: BagueData
   m_EditorClassIdentifier: 
-  m_name: 
-  m_icon: {fileID: 0}
+  m_name: Ring
+  m_icon: {fileID: 2800000, guid: a28420cbbb399b942a0b076917f2de93, type: 3}
   m_description: 
   m_armorType: 0
   m_equipmentType: 0
