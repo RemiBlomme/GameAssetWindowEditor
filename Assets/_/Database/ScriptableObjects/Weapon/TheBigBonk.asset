@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8341a79a2d4e04f48888ed11163f8722, type: 3}
-  m_Name: Excalibur
+  m_Name: TheBigBonk
   m_EditorClassIdentifier: 
-  m_name: Excalibur
-  m_description: The Legendary Sword
+  m_name: The Big Bonk
+  m_description: Bonk
   m_icon: {fileID: 0}
-  m_type: {fileID: 11400000, guid: e975b0b3a2f8f7742a12b1a54014e05f, type: 2}
-  m_price: 1000
-  m_damage: 20
-  m_defense: 10
-  m_magicDamage: 5
-  m_magicDefense: 3
-  m_agility: 10
-  m_luck: 5
+  m_type: {fileID: 11400000, guid: 833fc292dcfbe8944bd655194e7053a7, type: 2}
+  m_price: 100
+  m_damage: 5
+  m_defense: 1
+  m_magicDamage: 2
+  m_magicDefense: 2
+  m_agility: 1
+  m_luck: 1
   m_maxHP: 0
   m_maxMP: 0
