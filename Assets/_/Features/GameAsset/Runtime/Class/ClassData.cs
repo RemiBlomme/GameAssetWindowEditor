@@ -26,14 +26,7 @@ namespace GameAsset.Runtime
         public int[] m_XP;
         public int[] m_TotalXP;
         //l'index du tableau sert pour le niveau
-        public int[] m_hpMaxValue;
-        public int[] m_mpMaxValue;
-        public int[] m_attackValue;
-        public int[] m_defenseValue;
-        public int[] m_attackMValue;
-        public int[] m_defenseMValue;
-        public int[] m_agilityValue;
-        public int[] m_luckValue;
+  
         //public AnimationCurve m_hpMaxCurve;
 
         #endregion
