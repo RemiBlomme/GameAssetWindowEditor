@@ -73,14 +73,14 @@ namespace GameAsset.Runtime
         public float m_attackTimes;
         public float m_actionTimes;
 
-        //public States m_state;
+        public States m_state;
         public ExParameters m_exParameter;
         public SpParameters m_spParameter;
         public SlotTypes m_slotType;
         public SpecialFlags m_specialFlag;
         public CollapseEffects m_collapseEffect;
         public PartyAbilities m_partyAbility;
-        //public ParametersEnum m_debuffRate;
+        public ParametersEnum m_debuffRate;
 
         public ArmorTypeData[] _armorTypes;
         public ElementTypeData[] _elementTypes;
