@@ -4,7 +4,7 @@ using UnityEngine;
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class Images : MonoBehaviour
+    public class Images
     {
         #region Public Members
 
