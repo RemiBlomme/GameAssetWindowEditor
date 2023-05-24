@@ -1,14 +1,16 @@
 using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class Message 
+    public class TraitsParent
     {
         #region Public Members
 
-        public string m_messageAction;
-        public string m_messageDetail;
+        public float m_percentageBase;
+
         #endregion
     }
 }
