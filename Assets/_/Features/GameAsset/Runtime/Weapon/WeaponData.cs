@@ -8,7 +8,7 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
-        //public ParameterChange m_change;
+        public ParameterChange m_change;
 
         public WeaponTypeData m_type;
 
