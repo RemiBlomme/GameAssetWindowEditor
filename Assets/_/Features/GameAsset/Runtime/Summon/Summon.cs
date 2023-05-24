@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    [SerializeField]
+    [Serializable]
     public class Summon
     {
         #region Public Members
@@ -15,40 +14,19 @@ namespace GameAsset.Runtime
             magicalAttack,
             certainHit
         }
-        public int m_speed;
-        public int m_success;
+        public enum Animations
+        {
+            
+            Heal,
+            Attack
+            
+        }
+        public float m_speed;
+        [Range(0,100)] public float m_success;
         public int m_repeat;
         public int m_tpGain;
         public HitType m_hitType;
-        public Animation m_animation;
-
-        #endregion
-
-
-        #region Unity API
-
-
-
-        #endregion
-
-
-        #region Main Methods
-
-
-
-        #endregion
-
-
-        #region Utils
-
-
-
-        #endregion
-
-
-        #region Private and Protected Members
-
-
+        public Animations m_animation;
 
         #endregion
     }
