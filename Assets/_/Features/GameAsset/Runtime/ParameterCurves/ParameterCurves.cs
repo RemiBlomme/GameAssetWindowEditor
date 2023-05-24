@@ -30,8 +30,8 @@ namespace GameAsset.Runtime
         public int m_agilityLvl;
         public int m_agilityLvlValue;
 
-        public int m_luckValueLvl;
-        public int m_luckValueLvlValue;
+        public int m_luckLvl;
+        public int m_luckLvlValue;
 
         #endregion
 
