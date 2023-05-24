@@ -1,17 +1,17 @@
-using System;
+using GameAsset.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameAsset.Runtime
+
+[CreateAssetMenu]
+public class SkillData : ScriptableObject
 {
-    [Serializable]
-    public class WeaponRequired
-    {
     #region Public Members
 
-        public WeaponTypeData m_weaponTypeOne;
-        public WeaponTypeData m_weaponTypeTwo;
+    public Summon m_summon;
+    public Message m_message;
+    public WeaponRequired m_weaponRequired;
 
     #endregion
 
@@ -42,5 +42,4 @@ namespace GameAsset.Runtime
 
 
     #endregion
-    }
 }
