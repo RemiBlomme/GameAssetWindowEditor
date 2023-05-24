@@ -1,21 +1,27 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    public class ParameterCurve
+    [Serializable]
+    public class ParameterCurve 
+    
     {
-        public AnimationCurve m_curve;
-        public int m_maxLevel;
-        public int m_minLevelValue;
-        public int m_maxLevelValue;
 
-        public ParameterCurve(AnimationCurve curve, int maxLevel, int minLevelValue, int maxLevelValue)
-        {
-            m_curve = curve;
-            m_maxLevel = maxLevel;
-            m_minLevelValue = minLevelValue;
-            m_maxLevelValue = maxLevelValue;
-        }
+        #region Public Members
+
+        public HPMax m_hPMax;
+        public MPMax m_mPMax;
+        public Attack m_atack;
+        public Defense m_defense;
+        public AttackM m_attackM;
+        public DefenseM m_defenseM;
+        public Agility m_agility;
+        public Luck m_luck;
+
+        #endregion
+
     }
 }
