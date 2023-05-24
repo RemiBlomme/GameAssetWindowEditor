@@ -1,44 +1,18 @@
+using System;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
+    [Serializable]
     public class GeneralParametersArmor : GeneralParameters
     {
         #region Public Members
 
         public Sprite m_icon;
         public string m_description;
-        public string m_armorType; // TODO Change variable type
-        public string m_equipmentType; // TODO Change variable type
+        public ArmorTypeData m_armorType; 
+        public EquipmentTypeData m_equipmentType; 
         public int m_price;
-
-        #endregion
-
-
-        #region Unity API
-
-
-
-        #endregion
-
-
-        #region Main Methods
-
-
-
-        #endregion
-
-
-        #region Utils
-
-
-
-        #endregion
-
-
-        #region Private and Protected Members
-
-
 
         #endregion
     }

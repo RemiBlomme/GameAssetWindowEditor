@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
+    [Serializable]
     public class GeneralParametersObject : GeneralParameters
     {
         #region Public Members
@@ -13,34 +15,6 @@ namespace GameAsset.Runtime
         public bool m_isEdible;
         public ApplicationField m_applicationField;
         public UsageCondition m_usageCondition;
-
-        #endregion
-
-
-        #region Unity API
-
-
-
-        #endregion
-
-
-        #region Main Methods
-
-
-
-        #endregion
-
-
-        #region Utils
-
-
-
-        #endregion
-
-
-        #region Private and Protected Members
-
-
 
         #endregion
     }
