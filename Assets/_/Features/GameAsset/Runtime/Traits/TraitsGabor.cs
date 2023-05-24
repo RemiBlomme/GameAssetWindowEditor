@@ -15,7 +15,15 @@ namespace GameAsset.Runtime
        public enum States
         {
             Assomé,
-
+            Garde,
+            Immortel,
+            Empoisonné,
+            Aveuglé,
+            Muet,
+            Enragé,
+            Confus,
+            Fasciné,
+            Endormi
         }
     }
 }
