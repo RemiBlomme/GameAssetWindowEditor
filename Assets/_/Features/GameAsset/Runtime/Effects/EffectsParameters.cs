@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace GameAsset.Runtime
 {
     public class EffectsParameters
@@ -13,5 +9,9 @@ namespace GameAsset.Runtime
             RemoveBuff,
             RemoveDebuff,
         }
+
+        public EffectsParametersActions m_action;
+        public ParametersEnum m_parameter;
+        public int m_numberOfRounds;
     }
 }
