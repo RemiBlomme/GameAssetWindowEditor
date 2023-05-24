@@ -14,16 +14,16 @@ namespace GameAsset.Runtime
 
         public enum States
         {
-            Assomé,
-            Garde,
-            Immortel,
-            Empoisonné,
-            Aveuglé,
-            Muet,
-            Enragé,
-            Confus,
-            Fasciné,
-            Endormi
+            Knockout,
+            Guard,
+            Immortal,
+            Poison,
+            Blind,
+            Mute,
+            Rage,
+            Confusion,
+            Charmed,
+            Sleep
         }
 
         public enum ExParameters
@@ -92,6 +92,11 @@ namespace GameAsset.Runtime
         public float m_actionTimes;
 
         public States m_state;
-       
+        public ExParameters m_exParameter;
+        public SpParameters m_spParameter;
+        public SlotTypes m_slotType;
+        public SpecialFlags m_specialFlag;
+        public CollapseEffects m_collapseEffect;
+        public PartyAbilities m_partyAbility;
     }
 }
