@@ -9,37 +9,31 @@ namespace GameAsset.Runtime
 
         #region Public Members
 
-        public int[] m_hpMaxValue;
-        public int[] m_mpMaxValue;
-        public int[] m_attackValue;
-        public int[] m_defenseValue;
-        public int[] m_attackMValue;
-        public int[] m_defenseMValue;
-        public int[] m_agilityValue;
-        public int[] m_luckValue;
+        public int m_hpMaxLvl;
+        public int m_hpMaxLvlValue;
 
-        // -----> meme affichage pour chaque parametre (hp, mp etc)
-        // -----> faire un générateur de courbe avec parametres d'entrés modulaire (niveau, Valeur)
+        public int m_mpMaxLvl;
+        public int m_mpMaxLvlValue;
 
-        
+        public int m_attackLvl;
+        public int m_attackLvlValue;
 
-        
+        public int m_defenseLvl;
+        public int m_defenseLvlValue;
 
+        public int m_attackMLvl;
+        public int m_attackMValue;
+
+        public int m_defenseMLvl;
+        public int m_defenseMLvlValue;
+
+        public int m_agilityLvl;
+        public int m_agilityLvlValue;
+
+        public int m_luckValueLvl;
+        public int m_luckValueLvlValue;
 
         #endregion
-
-        #region Unity API
-
-        #endregion
-        #region Main Methods
-        #endregion
-
-        #region Utils
-        #endregion
-
-        #region Private and Protected Members
-        #endregion
-
 
     }
 }
