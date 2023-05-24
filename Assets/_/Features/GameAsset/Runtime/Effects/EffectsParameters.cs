@@ -1,5 +1,8 @@
+using System;
+
 namespace GameAsset.Runtime
 {
+    [Serializable]
     public class EffectsParameters
     {
         public enum EffectsParametersActions
