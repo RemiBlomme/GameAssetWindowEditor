@@ -4,7 +4,7 @@ using UnityEngine;
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class Recovery
+    public class Recovery : EffectComponents
     {
         public enum RecoveryType
         {

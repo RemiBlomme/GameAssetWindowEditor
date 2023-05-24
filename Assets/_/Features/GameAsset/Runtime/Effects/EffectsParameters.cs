@@ -3,7 +3,7 @@ using System;
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class EffectsParameters
+    public class EffectsParameters : EffectComponents
     {
         public enum EffectsParametersActions
         {

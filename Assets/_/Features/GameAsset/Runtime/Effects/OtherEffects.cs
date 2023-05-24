@@ -5,7 +5,8 @@ using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    public class OtherEffects : MonoBehaviour
+    [Serializable]
+    public class OtherEffects : EffectComponents
     {
         [Serializable]
         public enum OtherEffectType
@@ -24,8 +25,8 @@ namespace GameAsset.Runtime
 
         public enum CommonEvent
         {
-            Salut,
-            Bonjour
+            Hi,
+            Hello
         }
 
         #region Public Members

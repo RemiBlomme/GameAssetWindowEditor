@@ -4,7 +4,7 @@ using UnityEngine;
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class StatesActions
+    public class EffectsStates : EffectComponents
     {
         public enum StateAction
         {
