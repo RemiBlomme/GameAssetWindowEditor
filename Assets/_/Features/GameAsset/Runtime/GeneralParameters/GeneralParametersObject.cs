@@ -11,8 +11,8 @@ namespace GameAsset.Runtime
         public string m_objectType; // TODO Change variable type
         public int m_price;
         public bool m_isEdible;
-        //public ApplicationField m_applicationField;
-        //public UsageCondition m_usageCondition;
+        public ApplicationField m_applicationField;
+        public UsageCondition m_usageCondition;
 
         #endregion
 

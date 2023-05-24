@@ -11,8 +11,8 @@ namespace GameAsset.Runtime
         public string m_skillType; // TODO Change variable type
         public int m_mpCost;
         public int m_tpCost;
-        //public ApplicationField m_applicationField;
-        //public UsageCondition m_usageCondition;
+        public ApplicationField m_applicationField;
+        public UsageCondition m_usageCondition;
 
         #endregion
 
