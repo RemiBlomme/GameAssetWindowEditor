@@ -1,12 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
     public class Curve
     {
+
+        public ParameterCurveTypes m_parameterCurveType;
+
     	#region Public Member
 
         #endregion
@@ -21,7 +22,14 @@ namespace GameAsset.Runtime
 	
         void Start()
         {
-
+            GenerateCurve(m_parameterCurveType.m_hp.m_curve, m_parameterCurveType.m_hp.m_minLevelValue, m_parameterCurveType.m_hp.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_mp.m_curve, m_parameterCurveType.m_mp.m_minLevelValue, m_parameterCurveType.m_mp.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_attack.m_curve, m_parameterCurveType.m_attack.m_minLevelValue, m_parameterCurveType.m_attack.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_defense.m_curve, m_parameterCurveType.m_defense.m_minLevelValue, m_parameterCurveType.m_defense.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_attackM.m_curve, m_parameterCurveType.m_attackM.m_minLevelValue, m_parameterCurveType.m_attackM.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_defenseM.m_curve, m_parameterCurveType.m_defenseM.m_minLevelValue, m_parameterCurveType.m_defenseM.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_agility.m_curve, m_parameterCurveType.m_agility.m_minLevelValue, m_parameterCurveType.m_agility.m_maxLevelValue);
+            GenerateCurve(m_parameterCurveType.m_luck.m_curve, m_parameterCurveType.m_luck.m_minLevelValue, m_parameterCurveType.m_luck.m_maxLevelValue);
         }
 
         void Update()
