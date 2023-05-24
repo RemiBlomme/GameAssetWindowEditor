@@ -8,5 +8,6 @@ namespace GameAsset.Runtime
         public ParameterChange m_parameterChange;
         public Traits m_traits;
         public GeneralParametersArmor m_generalParametersArmor;
+        public Comment m_comment;
     }
 }
