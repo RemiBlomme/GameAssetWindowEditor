@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    public class Curve : MonoBehaviour
+    public class Curve
     {
     	#region Public Member
 	
@@ -40,12 +40,12 @@ namespace GameAsset.Runtime
 
         public void GenerateCurve(int min, int max, AnimationCurve typeCurve)
         {
-            float hpPerLevel = (max - min) / 99;
-            int hpPerLevelInt = (int)Math.Round(hpPerLevel);
-            for (int i = 0; i <= 99; i++)
+            float hpPerLevel = (max - min) / 99f;
+            int hpPerLevelInt = (int)Math.Ceiling((double)hpPerLevel);
+            for (int i = 0; i < 99; i++)
             {
-                float addHp = hpPerLevelInt * i;
-                typeCurve.AddKey(new Keyframe(i, min + addHp));
+                int addHp = hpPerLevelInt * i;
+                typeCurve.AddKey(new Keyframe(i + 1, min + addHp));
             }
         }
 
