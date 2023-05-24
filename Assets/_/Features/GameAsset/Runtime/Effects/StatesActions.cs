@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace GameAsset.Runtime
 {
+    [Serializable]
     public class StatesActions
     {
         public enum StateAction
