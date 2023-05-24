@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameAsset.Runtime
@@ -6,12 +7,6 @@ namespace GameAsset.Runtime
     [Serializable]
     public class Traits : MonoBehaviour
     {
-        public ArmorTypeData[] _armorTypes;
-        public ElementTypeData[] _elementTypes;
-        public EquipmentTypeData[] _equipmentTypes;
-        public SkillTypeData[] _skillTypes;
-        public WeaponTypeData[] _weaponTypes;
-
         public enum States
         {
             Knockout,
@@ -86,6 +81,18 @@ namespace GameAsset.Runtime
             DropItemDouble
         }
 
+        public enum DebuffRates
+        {
+            HPMax,
+            MPMax,
+            Attack,
+            Defense,
+            AttackM,
+            DefenseM,
+            Luck,
+            Agility
+        }
+
         public float m_percentage;
         public float m_attackSpeed;
         public float m_attackTimes;
@@ -98,5 +105,15 @@ namespace GameAsset.Runtime
         public SpecialFlags m_specialFlag;
         public CollapseEffects m_collapseEffect;
         public PartyAbilities m_partyAbility;
+        public DebuffRates m_debuffRate;
+
+        public ArmorTypeData[] _armorTypes;
+        public ElementTypeData[] _elementTypes;
+        public EquipmentTypeData[] _equipmentTypes;
+        public SkillTypeData[] _skillTypes;
+        public WeaponTypeData[] _weaponTypes;
+        // list of competences
+        public List<string> m_traits;
+        //add(Button.name + State.name + " * " + nbr + "%") rajouter dans la liste
     }
 }
