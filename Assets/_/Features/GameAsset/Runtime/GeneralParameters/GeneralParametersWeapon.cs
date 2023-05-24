@@ -1,10 +1,16 @@
+using UnityEngine;
+
 namespace GameAsset.Runtime
 {
-    public class GeneralParametersClass : GeneralParameters
+    public class GeneralParametersWeapon : GeneralParameters
     {
         #region Public Members
 
-        public int[] m_experienceCurve;
+        public Sprite m_icon;
+        public string m_description;
+        public string m_weaponType; // TODO Change variable type
+        public string m_animation; // TODO Change variable type
+        public int m_price;
 
         #endregion
 
