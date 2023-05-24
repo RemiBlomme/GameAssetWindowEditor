@@ -7,20 +7,6 @@ namespace GameAsset.Runtime
     [Serializable]
     public class Traits : MonoBehaviour
     {
-        public enum States
-        {
-            Knockout,
-            Guard,
-            Immortal,
-            Poison,
-            Blind,
-            Mute,
-            Rage,
-            Confusion,
-            Charmed,
-            Sleep
-        }
-
         public enum ExParameters
         {
             HitRate,
@@ -81,31 +67,20 @@ namespace GameAsset.Runtime
             DropItemDouble
         }
 
-        public enum DebuffRates
-        {
-            HPMax,
-            MPMax,
-            Attack,
-            Defense,
-            AttackM,
-            DefenseM,
-            Luck,
-            Agility
-        }
 
         public float m_percentage;
         public float m_attackSpeed;
         public float m_attackTimes;
         public float m_actionTimes;
 
-        public States m_state;
+        //public States m_state;
         public ExParameters m_exParameter;
         public SpParameters m_spParameter;
         public SlotTypes m_slotType;
         public SpecialFlags m_specialFlag;
         public CollapseEffects m_collapseEffect;
         public PartyAbilities m_partyAbility;
-        public DebuffRates m_debuffRate;
+        //public ParametersEnum m_debuffRate;
 
         public ArmorTypeData[] _armorTypes;
         public ElementTypeData[] _elementTypes;
