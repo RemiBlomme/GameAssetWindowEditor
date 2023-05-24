@@ -8,6 +8,12 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
+        public string m_weapon;
+        public string m_shield;
+        public string m_head;
+        public string m_body;
+        public string m_accessorie;
+
         #endregion
 
         #region Unity API
