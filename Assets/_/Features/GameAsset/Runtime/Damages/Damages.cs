@@ -23,36 +23,8 @@ namespace GameAsset.Runtime
         public ElementTypeData m_elementType;
         public string m_formula;
         [Range(0,100)]
-        public int m_variance;
+        public float m_variance;
         public bool m_criticalHit;
-
-        #endregion
-
-
-        #region Unity Api
-
-
-
-        #endregion
-
-
-        #region Main Methods
-
-
-
-        #endregion
-
-
-        #region Utils
-
-
-
-        #endregion
-
-
-        #region Private and Protected Members
-
-
 
         #endregion
     }
