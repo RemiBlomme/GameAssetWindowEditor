@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_generalParameters:
     _name: Potion
-    m_icon: {fileID: 21300000, guid: a67b58d6cddcd4345b1e001340de5a76, type: 3}
+    m_icon: {fileID: 21300000, guid: dd15cfdb654c239468730978750cd8b6, type: 3}
     m_description: 
     m_objectType: Normal Object
     m_price: 50
@@ -54,4 +54,5 @@ MonoBehaviour:
       m_growAmount: 0
       m_skill: {fileID: 0}
       m_commonEvent: 0
-  m_remarque: 
+  m_comment:
+    m_comment: 

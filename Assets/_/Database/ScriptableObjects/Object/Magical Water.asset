@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_generalParameters:
     _name: Magical Water
-    m_icon: {fileID: 21300000, guid: 2bb4e96f5d0b02c468932d665a015c54, type: 3}
+    m_icon: {fileID: 21300000, guid: dd15cfdb654c239468730978750cd8b6, type: 3}
     m_description: 
     m_objectType: Normal Object
     m_price: 100
-    m_isEdible: 0
+    m_isEdible: 1
     m_applicationField: 7
     m_usageCondition: 0
   m_summon:
@@ -31,7 +31,7 @@ MonoBehaviour:
   m_damages:
     m_damageType: 0
     m_elementType: {fileID: 0}
-    m_formula: 
+    m_formula: 0
     m_variance: 0
     m_criticalHit: 0
   m_effects:
@@ -54,4 +54,5 @@ MonoBehaviour:
       m_growAmount: 0
       m_skill: {fileID: 0}
       m_commonEvent: 0
-  m_remarque: 
+  m_comment:
+    m_comment: 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    [CreateAssetMenu(fileName = "Object", menuName = "Game Database/Object")]
+    [CreateAssetMenu(fileName = "ObjectData", menuName = "Game Database/Object")]
     public class ObjectData : ScriptableObject
     {
         #region Public Members
@@ -11,7 +11,7 @@ namespace GameAsset.Runtime
         public Summon m_summon;
         public Damages m_damages;
         public Effects[] m_effects;
-        public string m_remarque;
+        public Comment m_comment;
 
         #endregion
     }
