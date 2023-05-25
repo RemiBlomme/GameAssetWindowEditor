@@ -65,13 +65,10 @@ MonoBehaviour:
       m_maxLvlValue: 277
       m_growthType: 11
   m_skillsToLearn:
-    m_level: 0100000001000000
+    m_level: 01000000
     m_skill:
-    - {fileID: 11400000, guid: 62c1b69b20801984e88b21e5eabd4914, type: 2}
-    - {fileID: 11400000, guid: 7135675ba6230e448a8b69c3b2b9ce93, type: 2}
-    m_comment:
-    - Don't use it near a gas bottle
-    - Heal me please
+    - {fileID: 11400000, guid: 93e5bfe96b3a20c47b6817035802461c, type: 2}
+    m_comment: []
   m_traits:
   - m_rates:
       m_percentageBase: 0
