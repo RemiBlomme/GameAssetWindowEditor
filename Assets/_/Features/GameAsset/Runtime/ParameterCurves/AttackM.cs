@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace GameAsset.Runtime
 {
@@ -9,9 +6,5 @@ namespace GameAsset.Runtime
     [Serializable]
     public class AttackM : Curves
     {
-
-  
-
-
     }
 }

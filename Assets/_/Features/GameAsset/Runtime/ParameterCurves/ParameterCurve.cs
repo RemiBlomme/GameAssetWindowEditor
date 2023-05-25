@@ -1,15 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class ParameterCurve 
-    
+    public class ParameterCurve
     {
-
         #region Public Members
 
         public HPMax m_hPMax;
@@ -22,6 +17,5 @@ namespace GameAsset.Runtime
         public Luck m_luck;
 
         #endregion
-
     }
 }
