@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GameAsset.Runtime
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName = "Weapon", menuName = "Game Database/Weapon")]
     public class WeaponData : ScriptableObject
     {
         #region Public Members
