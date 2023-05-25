@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace GameAsset.Runtime
 {
@@ -9,15 +10,15 @@ namespace GameAsset.Runtime
 
         //Element
         public ElementTypeData m_elementTypes;
-        public float m_percentageElements;
+        [Range(0, 1000)] public float m_percentageElements = 100f;
 
         //Debuff
         public ParametersEnum m_debuffRate;
-        public float m_percentageDebuffRate;
+        [Range(0, 1000)] public float m_percentageDebuffRate = 100f;
 
         //State
         public States m_state;
-        public float m_percentageState;
+        [Range(0,1000)] public float m_percentageState = 100f;
 
         //Resistance
         public States m_resistState;

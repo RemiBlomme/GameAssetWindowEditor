@@ -6,18 +6,15 @@ namespace GameAsset.Runtime
     [Serializable]
     public class EffectsStates : EffectComponents
     {
-        public enum StateAction
-        {
-            AddState,
-            RemoveState,
-        }
-
         #region Public Members
 
-        public StateAction m_stateAction;
-        public States m_state;
+        public States m_addState;
+        [Range(0, 1000)]
+        public float m_addProbability;
+
+        public States m_removeState;
         [Range(0, 100)]
-        public float m_probability;
+        public float m_removeProbability;
 
         #endregion
     }

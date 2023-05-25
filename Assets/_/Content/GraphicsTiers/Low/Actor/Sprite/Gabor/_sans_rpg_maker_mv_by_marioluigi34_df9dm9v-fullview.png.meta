@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: 4b754ef8b9282e64a899e06fbb1bfe59
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 250
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92315546795c2654c800b3f8bd1c40ba
+      internalID: -1283867835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 252
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9c3b27278e34c41a406ca7a07f28f6
+      internalID: 732183218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 250
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a776ff29404489b4faa4e44d68eaefc8
+      internalID: 1134822875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 172
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c873cbfc249f345b58eb3fbde95396
+      internalID: -369198025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 172
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c062584a41e9a439316bd13b19c338
+      internalID: -479282122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 172
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258d0db2ba1e6094fb69116ca9b4c63e
+      internalID: -2029777008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 92
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bd695808399484a8427fe6bacff069
+      internalID: -1994718081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 92
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169049f97321cc545b660b79a38ff659
+      internalID: 78545473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_8
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 92
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099bd21ea68fa4245a8495d53c6e29c3
+      internalID: -600921816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 10
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2943c145c28ed34499c1431d3f94a5a0
+      internalID: 555475032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 12
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb786c97479eb7f4fa0c702bc7723231
+      internalID: -857319491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 10
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba8c2b3310f93e4baed80cd8ec07a15
+      internalID: -146310817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_0: -1283867835
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_1: 732183218
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_10: -857319491
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_11: -146310817
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_2: 1134822875
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_3: -369198025
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_4: -479282122
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_5: -2029777008
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_6: -1994718081
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_7: 78545473
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_8: -600921816
+      _sans_rpg_maker_mv_by_marioluigi34_df9dm9v-fullview_9: 555475032
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

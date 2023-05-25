@@ -7,10 +7,10 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
-        public Recovery m_recovery;
+        public EffectsRecovery m_recovery;
         public EffectsStates m_states;
         public EffectsParameters m_effectsParameters;
-        public OtherEffects m_other;
+        public EffectsOther m_other;
 
         #endregion
     }

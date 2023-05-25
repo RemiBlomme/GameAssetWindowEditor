@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace GameAsset.Runtime
 {
@@ -34,7 +35,7 @@ namespace GameAsset.Runtime
         #region Public Members
 
         //Action Time
-        public float m_actionTimes;
+        [Range(0, 100)] public float m_actionTimes;
 
         //Special Flag
         public SpecialFlags m_specialFlag;
