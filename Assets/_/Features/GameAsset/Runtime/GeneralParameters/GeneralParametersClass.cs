@@ -3,12 +3,12 @@ using System;
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class Message 
+    public class GeneralParametersClass : GeneralParameters
     {
         #region Public Members
 
-        public string m_messageAction;
-        public string m_messageDetail;
+        public int[] m_experienceCurve;
+
         #endregion
     }
 }
