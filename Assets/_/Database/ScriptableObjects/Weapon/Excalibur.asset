@@ -12,16 +12,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8341a79a2d4e04f48888ed11163f8722, type: 3}
   m_Name: Excalibur
   m_EditorClassIdentifier: 
-  m_name: Excalibur
-  m_description: The Legendary Sword
-  m_icon: {fileID: 0}
-  m_type: {fileID: 11400000, guid: e1ba6fd38167e7d4c88981737efb8910, type: 2}
-  m_price: 1000
-  m_damage: 20
-  m_defense: 10
-  m_magicDamage: 5
-  m_magicDefense: 3
-  m_agility: 10
-  m_luck: 5
-  m_maxHP: 0
-  m_maxMP: 0
+  m_generalParametersWeapon:
+    _name: Excalibur
+    m_icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    m_description: "\xE9p\xE9e cool"
+    m_weaponType: {fileID: 11400000, guid: 803b365996e7f874688f7ceb8e618e7d, type: 2}
+    m_price: 0
+  m_change:
+    m_damage: 0
+    m_defense: 0
+    m_magicDamage: 0
+    m_magicDefense: 0
+    m_agility: 0
+    m_luck: 0
+    m_maxHP: 0
+    m_maxMP: 0
+  m_traits:
+    m_rates:
+      m_percentageBase: 0
+      m_elementTypes: {fileID: 0}
+      m_percentageElements: 0
+      m_debuffRate: 0
+      m_percentageDebuffRate: 0
+      m_state: 0
+      m_percentageState: 0
+      m_resistState: 0
+    m_params:
+      m_percentageBase: 0
+      m_parametre: 0
+      m_percentageParametre: 0
+      m_exParameter: 0
+      m_percentageExParam: 0
+      m_spParameter: 0
+      m_percentageSpParam: 0
+    m_attack:
+      m_percentageBase: 0
+      m_elementTypesAttack: {fileID: 0}
+      m_stateAttack: 0
+      m_percentageAttack: 0
+      m_attackSpeed: 0
+      m_attackTimes: 0
+    m_comp:
+      m_percentageBase: 0
+      m_skillTypes: {fileID: 0}
+      m_skillTypesSeal: {fileID: 0}
+      m_skills: {fileID: 0}
+      m_skillsSeal: {fileID: 0}
+    m_equip:
+      m_percentageBase: 0
+      m_weaponTypes: {fileID: 0}
+      m_armorTypes: {fileID: 0}
+      m_equipmentTypes: {fileID: 0}
+      m_equipmentTypesSeal: {fileID: 0}
+      m_slotType: 0
+    m_other:
+      m_percentageBase: 0
+      m_actionTimes: 0
+      m_specialFlag: 0
+      m_collapseEffect: 0
+      m_partyAbility: 0

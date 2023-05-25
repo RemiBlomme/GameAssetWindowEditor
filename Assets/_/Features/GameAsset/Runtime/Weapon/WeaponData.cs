@@ -8,9 +8,9 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
+        public GeneralParametersWeapon m_generalParametersWeapon;
         public ParameterChange m_change;
-
-        public WeaponTypeData m_type;
+        public Traits m_traits;
 
         #endregion Public Members
 
