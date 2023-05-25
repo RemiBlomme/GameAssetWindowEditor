@@ -4,7 +4,7 @@ namespace GameAsset.Runtime
 {
 
     [Serializable]
-    public class AttackM : Curves
+    public class CurveMagicAttack : Curves
     {
     }
 }

@@ -7,14 +7,14 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
-        public HPMax m_hPMax;
-        public MPMax m_mPMax;
-        public Attack m_atack;
-        public Defense m_defense;
-        public AttackM m_attackM;
-        public DefenseM m_defenseM;
-        public Agility m_agility;
-        public Luck m_luck;
+        public CurveHPMax m_hPMax;
+        public CurveMPMax m_mPMax;
+        public CurveAttack m_attack;
+        public CurveDefense m_defense;
+        public CurveMagicAttack m_magicAttack;
+        public CurveMagicDefense m_magicDefense;
+        public CurveAgility m_agility;
+        public CurveLuck m_luck;
 
         #endregion
     }

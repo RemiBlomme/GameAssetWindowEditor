@@ -3,7 +3,7 @@ using System;
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class Attack : Curves
+    public class CurveDefense : Curves
     {
     }
 }
