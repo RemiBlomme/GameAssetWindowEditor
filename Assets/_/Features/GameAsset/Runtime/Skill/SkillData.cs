@@ -1,45 +1,20 @@
-using GameAsset.Runtime;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-[CreateAssetMenu]
-public class SkillData : ScriptableObject
+namespace GameAsset.Runtime
 {
-    #region Public Members
+    [CreateAssetMenu(fileName = "SkillData", menuName = "Game Database/Skill")]
+    public class SkillData : ScriptableObject
+    {
+        #region Public Members
 
-    public Summon m_summon;
-    public Message m_message;
-    public WeaponRequired m_weaponRequired;
+        public GeneralParametersSkill m_generalParameters;
+        public Summon m_summon;
+        public Message m_message;
+        public WeaponRequired m_weaponRequired;
+        public Damages m_damages;
+        public Effects m_effects;
+        public Comment m_comment;
 
-    #endregion
-
-
-    #region Unity API
-
-
-
-    #endregion
-
-
-    #region Main Methods
-
-
-
-    #endregion
-
-
-    #region Utils
-
-
-
-    #endregion
-
-
-    #region Private and Protected Members
-
-
-
-    #endregion
+        #endregion
+    }
 }

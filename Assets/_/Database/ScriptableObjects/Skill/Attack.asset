@@ -12,10 +12,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c717f7d686df2924a999b3874acd1d27, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
+  m_generalParameters:
+    _name: Attack
+    m_icone: {fileID: 21300000, guid: 8b49875c1c61f8546bec5e9a9730ee8a, type: 3}
+    m_description: It is an attack
+    m_skillType: {fileID: 11400000, guid: 9def745e5a18df54dbb0fef3a9fcfe9f, type: 2}
+    m_mpCost: 1
+    m_tpCost: 5
+    m_applicationField: 1
+    m_usageCondition: 1
   m_summon:
     m_speed: 5
-    m_success: 0
-    m_repeat: 0
-    m_tpGain: 0
+    m_success: 95.1
+    m_repeat: 1
+    m_tpGain: 10
     m_hitType: 0
-    m_animation: 0
+    m_animation: 1
+  m_message:
+    m_messageAction: attack!
+    m_messageDetail: It is a good attack
+  m_weaponRequired:
+    m_weaponTypeOne: {fileID: 11400000, guid: 803b365996e7f874688f7ceb8e618e7d, type: 2}
+    m_weaponTypeTwo: {fileID: 11400000, guid: e03ac1b1359cfe7428bd897164b29d2d, type: 2}
+  m_damages:
+    m_damageType: 1
+    m_elementType: {fileID: 11400000, guid: 4b2b4b514ea707c48807a42705a0755a, type: 2}
+    m_formula: a.atk * 4 - b.def * 2
+    m_variance: 21.1
+    m_criticalHit: 1
+  m_effects:
+    m_recovery:
+      m_recoveryType: 0
+      m_recoveryPercentage: 0
+      m_recoveryAmount: 0
+    m_states:
+      m_stateAction: 0
+      m_state: 0
+      m_probability: 100
+    m_effectsParameters:
+      m_action: 0
+      m_parameter: 0
+      m_numberOfRounds: 0
+    m_other:
+      m_otherEffectType: 0
+      m_specialEffect: 0
+      m_parametersEnum: 0
+      m_growAmount: 0
+      m_skill: {fileID: 0}
+      m_commonEvent: 0
+  m_comment:
+    m_comment: Skill is going to be used in battle
