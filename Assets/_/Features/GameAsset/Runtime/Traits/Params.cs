@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace GameAsset.Runtime
 {
@@ -36,15 +37,15 @@ namespace GameAsset.Runtime
 
         //Parameter
         public ParametersEnum m_parametre;
-        public float m_percentageParametre = 100f;
+        [Range(0, 1000)] public float m_percentageParametre = 100f;
 
         //Ex-Parameter
         public ExParameters m_exParameter;
-        public float m_percentageExParam = 100f;
+        [Range(-1000, 1000)] public float m_percentageExParam;
 
         //Sp-Parameter
         public SpParameters m_spParameter;
-        public float m_percentageSpParam = 100f;
+        [Range(0, 1000)] public float m_percentageSpParam = 100f;
 
         #endregion
 
