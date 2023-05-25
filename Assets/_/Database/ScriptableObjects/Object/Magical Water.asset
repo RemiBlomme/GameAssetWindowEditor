@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22ddd952314e4e948919aed18426a8d4, type: 3}
-  m_Name: Potion
+  m_Name: Magical Water
   m_EditorClassIdentifier: 
   m_generalParameters:
-    _name: Potion
-    m_icon: {fileID: 21300000, guid: a67b58d6cddcd4345b1e001340de5a76, type: 3}
+    _name: Magical Water
+    m_icon: {fileID: 21300000, guid: 2bb4e96f5d0b02c468932d665a015c54, type: 3}
     m_description: 
     m_objectType: Normal Object
-    m_price: 50
-    m_isEdible: 1
+    m_price: 100
+    m_isEdible: 0
     m_applicationField: 7
     m_usageCondition: 0
   m_summon:
@@ -31,14 +31,14 @@ MonoBehaviour:
   m_damages:
     m_damageType: 0
     m_elementType: {fileID: 0}
-    m_formula: 0
-    m_variance: 20
+    m_formula: 
+    m_variance: 0
     m_criticalHit: 0
   m_effects:
   - m_recovery:
-      m_recoveryType: 0
+      m_recoveryType: 1
       m_recoveryPercentage: 0
-      m_recoveryAmount: 500
+      m_recoveryAmount: 200
     m_states:
       m_stateAction: 0
       m_state: 0
