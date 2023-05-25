@@ -11,6 +11,7 @@ namespace GameAsset.Runtime
         public GeneralParametersWeapon m_generalParametersWeapon;
         public ParameterChange m_change;
         public Traits m_traits;
+        public Comment m_comment;
 
         #endregion Public Members
 
