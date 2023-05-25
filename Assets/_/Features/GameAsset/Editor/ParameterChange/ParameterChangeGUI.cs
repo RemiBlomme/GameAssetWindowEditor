@@ -1,3 +1,4 @@
+using GameAsset.Runtime;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace GameAsset.Editor
     {
         #region Public Members
 
-        public int m_damage, m_defense, m_magicDamage, m_magicDefense, m_agility, m_luck, m_maxHP, m_maxMP;
+        public ParameterChange m_parameterChange;
 
         #endregion
 
@@ -25,17 +26,17 @@ namespace GameAsset.Editor
         private void OnGUI()
         {
             EditorGUILayout.BeginHorizontal();
-            m_damage = EditorGUILayout.IntField("Damage", m_damage);
-            m_defense = EditorGUILayout.IntField("Defense", m_defense);
-            m_magicDamage = EditorGUILayout.IntField("Magic Damage", m_magicDamage);
-            m_magicDefense = EditorGUILayout.IntField("Magic Defense", m_magicDefense);
+            m_parameterChange.m_damage = EditorGUILayout.IntField("Damage", m_parameterChange.m_damage);
+            m_parameterChange.m_defense = EditorGUILayout.IntField("Defense", m_parameterChange.m_defense);
+            m_parameterChange.m_magicDamage = EditorGUILayout.IntField("Magic Damage", m_parameterChange.m_magicDamage);
+            m_parameterChange.m_magicDefense = EditorGUILayout.IntField("Magic Defense", m_parameterChange.m_magicDefense);
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
-            m_agility = EditorGUILayout.IntField("Agility", m_agility);
-            m_luck = EditorGUILayout.IntField("Lucl", m_luck);
-            m_maxHP = EditorGUILayout.IntField("Max HP", m_maxHP);
-            m_maxMP = EditorGUILayout.IntField("Max MP", m_maxMP);
+            m_parameterChange.m_agility = EditorGUILayout.IntField("Agility", m_parameterChange.m_agility);
+            m_parameterChange.m_luck = EditorGUILayout.IntField("Lucl", m_parameterChange.m_luck);
+            m_parameterChange.m_maxHP = EditorGUILayout.IntField("Max HP", m_parameterChange.m_maxHP);
+            m_parameterChange.m_maxMP = EditorGUILayout.IntField("Max MP", m_parameterChange.m_maxMP);
             EditorGUILayout.EndHorizontal();
         }
 
