@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ddd952314e4e948919aed18426a8d4, type: 3}
   m_Name: Potion
   m_EditorClassIdentifier: 
+  m_generalParameters:
+    _name: Potion
+    m_icon: {fileID: 21300000, guid: ddf2e76e8a1f88f46ae1e42277850b48, type: 3}
+    m_description: 
+    m_objectType: Objet normal
+    m_price: 0
+    m_isEdible: 0
+    m_applicationField: 7
+    m_usageCondition: 0
   m_summon:
     m_speed: 0
     m_success: 0

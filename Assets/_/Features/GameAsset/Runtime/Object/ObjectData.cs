@@ -7,6 +7,7 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
+        public GeneralParametersObject m_generalParameters;
         public Summon m_summon;
         public Damages m_damages;
         public Effects[] m_effects;
