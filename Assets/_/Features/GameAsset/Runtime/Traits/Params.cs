@@ -36,15 +36,15 @@ namespace GameAsset.Runtime
 
         //Parameter
         public ParametersEnum m_parametre;
-        public float m_percentageParametre;
+        public float m_percentageParametre = 100f;
 
         //Ex-Parameter
         public ExParameters m_exParameter;
-        public float m_percentageExParam;
+        public float m_percentageExParam = 100f;
 
         //Sp-Parameter
         public SpParameters m_spParameter;
-        public float m_percentageSpParam;
+        public float m_percentageSpParam = 100f;
 
         #endregion
 

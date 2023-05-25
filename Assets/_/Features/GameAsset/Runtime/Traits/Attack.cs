@@ -12,7 +12,7 @@ namespace GameAsset.Runtime
 
         //Attack State
         public States m_stateAttack;
-        public float m_percentageAttack;
+        public float m_percentageAttack = 100f;
 
         //Attack Speed
         public float m_attackSpeed;
