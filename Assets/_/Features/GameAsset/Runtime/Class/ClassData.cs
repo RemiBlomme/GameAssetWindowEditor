@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameAsset.Runtime
@@ -9,8 +10,8 @@ namespace GameAsset.Runtime
 
         public GeneralParametersClass m_generalParametersClass;
         public ParameterCurve m_parameterCurve;
-        public SkillsToLearn m_skillsToLearn;
-        public Traits m_traits;
+        public SkillsToLearn m_skillsToLearn;        
+        public List<Traits> m_traits;
         public Comment m_comment;
 	
     	#endregion

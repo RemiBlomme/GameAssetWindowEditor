@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc18b007a50da0249b6a340bf7c0921e, type: 3}
+  m_Name: Warrior
+  m_EditorClassIdentifier: 
+  m_generalParametersClass:
+    _name: 
+    m_experienceCurve: 
+  m_parameterCurve:
+    m_hPMax:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_mPMax:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_attack:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_defense:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_magicAttack:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_magicDefense:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_agility:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+    m_luck:
+      m_minLvl: 1
+      m_maxLvl: 99
+      m_minLvlValue: 0
+      m_maxLvlValue: 0
+      m_growthType: 0
+  m_skillsToLearn:
+    m_level: 
+    m_skill: []
+    m_comment: []
+  m_traits:
+    m_rates:
+      m_percentageBase: 0
+      m_elementTypes: {fileID: 0}
+      m_percentageElements: 0
+      m_debuffRate: 0
+      m_percentageDebuffRate: 0
+      m_state: 0
+      m_percentageState: 0
+      m_resistState: 0
+    m_params:
+      m_percentageBase: 0
+      m_parametre: 0
+      m_percentageParametre: 0
+      m_exParameter: 0
+      m_percentageExParam: 0
+      m_spParameter: 0
+      m_percentageSpParam: 0
+    m_attack:
+      m_percentageBase: 0
+      m_elementTypesAttack: {fileID: 0}
+      m_stateAttack: 0
+      m_percentageAttack: 0
+      m_attackSpeed: 0
+      m_attackTimes: 0
+    m_comp:
+      m_percentageBase: 0
+      m_skillTypes: {fileID: 0}
+      m_skillTypesSeal: {fileID: 0}
+      m_skills: {fileID: 0}
+      m_skillsSeal: {fileID: 0}
+    m_equip:
+      m_percentageBase: 0
+      m_weaponTypes: {fileID: 0}
+      m_armorTypes: {fileID: 0}
+      m_equipmentTypes: {fileID: 0}
+      m_equipmentTypesSeal: {fileID: 0}
+      m_slotType: 0
+    m_other:
+      m_percentageBase: 0
+      m_actionTimes: 0
+      m_specialFlag: 0
+      m_collapseEffect: 0
+      m_partyAbility: 0
+  m_comment:
+    m_comment: 
