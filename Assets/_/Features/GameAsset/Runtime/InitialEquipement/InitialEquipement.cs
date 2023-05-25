@@ -7,11 +7,11 @@ namespace GameAsset.Runtime
     {
         #region Public Members
 
-        public string m_weapon;
-        public string m_shield;
-        public string m_head;
-        public string m_body;
-        public string m_accessorie;
+        public WeaponData m_weapon;
+        public ArmorData m_shield;
+        public ArmorData m_head;
+        public ArmorData m_body;
+        public ArmorData m_accessorie;
 
         #endregion
     }
