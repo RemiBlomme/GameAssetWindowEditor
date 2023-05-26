@@ -11,7 +11,7 @@ namespace GameAsset.Runtime
         public ArmorData m_shield;
         public ArmorData m_head;
         public ArmorData m_body;
-        public ArmorData m_accessorie;
+        public ArmorData m_accessory;
 
         #endregion
     }
