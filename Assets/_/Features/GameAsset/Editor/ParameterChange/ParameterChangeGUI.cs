@@ -1,29 +1,27 @@
 using GameAsset.Runtime;
 using UnityEditor;
-using UnityEditor.Callbacks;
-using UnityEngine;
 
 namespace GameAsset.Editor
 {
-    [CreateAssetMenu(fileName = "ParameterChangerGUI", menuName = "Test")]
     public class ParameterChangeGUI : EditorWindow
     {
-        #region Public Members
+        #region Main Methods
 
-        public ParameterChange m_parameterChange;
-
-        #endregion
-
-        #region Unity API
-
-        [MenuItem("test/ParameterChangeGUI")]
-        public static void ShowWindow()
+        public void GetGUI(ParameterChange data)
         {
-            GetWindow<ParameterChangeGUI>();
-            Debug.Log("open window");
+            SetArmorDataInstance(data);
+
+            if (m_parameterChange == null) return;
+
+            Display();
         }
 
-        private void OnGUI()
+        public void SetArmorDataInstance(ParameterChange data)
+        {
+            m_parameterChange = data;
+        }
+
+        private void Display()
         {
             EditorGUILayout.BeginHorizontal();
             m_parameterChange.m_damage = EditorGUILayout.IntField("Damage", m_parameterChange.m_damage);
@@ -42,15 +40,9 @@ namespace GameAsset.Editor
 
         #endregion
 
-        #region Main Methods
-
-        #endregion
-
-        #region Utils
-
-        #endregion
-
         #region Private and Protected Members
+
+        private ParameterChange m_parameterChange;
 
         #endregion
     }
