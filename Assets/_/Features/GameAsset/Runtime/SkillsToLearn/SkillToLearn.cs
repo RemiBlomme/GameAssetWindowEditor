@@ -1,14 +1,15 @@
 using System;
-using System.Collections.Generic;
 
 namespace GameAsset.Runtime
 {
     [Serializable]
-    public class SkillsToLearn
+    public class SkillToLearn
     {
         #region Public Members
 
-        public List<SkillToLearn> m_skillsToLearn;
+        public int m_level;
+        public SkillData m_skill;
+        public string m_comment;
 
         #endregion
     }
