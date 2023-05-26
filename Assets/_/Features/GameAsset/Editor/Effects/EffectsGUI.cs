@@ -1,5 +1,6 @@
 using Codice.Client.Common.GameUI;
 using GameAsset.Runtime;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -10,21 +11,24 @@ namespace GameAsset.Editor
 {
     public class EffectsGUI : EditorWindow
     {
-        #region Public Members
-    
-        #endregion
-    
-    
-        #region Unity API
-    
-        void Start()
+        public enum EffecsComponentsEnum
         {
-        
+            Recovery,
+            State,
+            Parameters,
+            Other
         }
-    
-        void Update()
+
+        #region Public Members
+
+        #endregion
+
+
+        #region Unity API
+
+        private void OnGUI()
         {
-        
+            Display();
         }
 
         #endregion
@@ -60,10 +64,40 @@ namespace GameAsset.Editor
             return false;
         }
 
-        private void Display()
+        public void Display()
         {
+            DisplayButtons();
+        }
 
+        private void DisplayButtons()
+        {
+            GUILayout.BeginHorizontal();
+            foreach(string s in Enum.GetNames(typeof(EffecsComponentsEnum)))
+            {
+                if (GUILayout.Button(s))
+                {
+                    _effecsComponentsEnum = (EffecsComponentsEnum)Enum.Parse(typeof(EffecsComponentsEnum),s);
+                }
+            }
+            GUILayout.EndHorizontal();
 
+            switch (_effecsComponentsEnum)
+            {
+                case EffecsComponentsEnum.Recovery:
+                    DisplayRecovery();
+                    break;
+                case EffecsComponentsEnum.State:
+                    break;
+                case EffecsComponentsEnum.Parameters:
+                    break;
+                case EffecsComponentsEnum.Other:
+                    break;
+            }
+        }
+
+        private void DisplayRecovery()
+        {
+            GUILayout.Label("Recovery");
         }
 
         #endregion
@@ -72,6 +106,7 @@ namespace GameAsset.Editor
         #region Private and Protected Members
 
         private Effects _effects;
+        private EffecsComponentsEnum _effecsComponentsEnum;
 
         #endregion
     }
