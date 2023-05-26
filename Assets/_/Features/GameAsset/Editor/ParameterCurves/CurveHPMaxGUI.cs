@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using GameAsset.Runtime;
+using JetBrains.Annotations;
 
 namespace GameAsset.Editor
 
@@ -14,10 +15,8 @@ namespace GameAsset.Editor
         #region Public Members
         
         public AnimationCurve m_HPCurve = new AnimationCurve();
-        public CurveHPMax m_curveHPMax;
+        public ClassData m_classData;
 
-        public int m_level;
-        public int m_levelValue;
 
 
 
@@ -26,15 +25,23 @@ namespace GameAsset.Editor
 
         private void OnGUI()
         {
-            //GenerateCurve(m_curveHPMax.m_minLvlValue, m_curveHPMax.m_maxLvlValue, m_HPCurve);
+            ClassData instance = new ClassData();
+            //Hero Instance = ScriptableObject.CreateInstance<Hero>();
+            instance.m_parameterCurve.m_hPMax.m_minLvlValue = 450;
+            instance.m_parameterCurve.m_hPMax.m_maxLvlValue = 3000;
+            //m_curveHPMax = m_classData.m_parameterCurve.m_hPMax;
 
             GUILayout.BeginHorizontal();
-            m_level = EditorGUILayout.IntField("Level : ", m_level);
-            m_levelValue = EditorGUILayout.IntField("Value : ", m_levelValue);
+            //m_level = EditorGUILayout.IntField("Level : ", m_level);
+            //m_levelValue = EditorGUILayout.IntField("Value : ", m_levelValue);
             GUILayout.Button($"Generate Curve");
             GUILayout.EndHorizontal();
 
-            GenerateCurve(450, 3500, m_HPCurve);
+            //CurveHPMax instance = new CurveHPMax();
+            //instance.m_minLvlValue = 450;
+            //instance.m_maxLvlValue = 3000;
+            //GenerateCurve(m_curveHPMax.m_minLvlValue, m_curveHPMax.m_maxLvlValue, m_HPCurve);
+            GenerateCurve(instance.m_parameterCurve.m_hPMax.m_minLvlValue, instance.m_parameterCurve.m_hPMax.m_maxLvlValue, m_HPCurve);
             m_HPCurve = EditorGUILayout.CurveField(m_HPCurve);
 
         }

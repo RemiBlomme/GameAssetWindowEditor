@@ -1,11 +1,7 @@
 using GameAsset.Runtime;
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEditor;
 using UnityEngine;
-using System;
-using System.Diagnostics;
-using UnityEditorInternal;
 
 namespace GameAsset.Editor
 {
@@ -16,13 +12,15 @@ namespace GameAsset.Editor
 
         public ParametersEnum? m_parametersEnum = null;
 
+        public ParameterCurve m_parameterCurve;
+        public ClassData m_classData;
+
         #endregion
 
 
         #region Main Methods
 
-        [MenuItem("Window/Parameters Curves")]
-
+        [MenuItem("Tool/Parameters Curves")]
         public static void ShowWidow()
         {
             var window = GetWindow<ParametersCurvesGUI>();
@@ -31,9 +29,36 @@ namespace GameAsset.Editor
 
         private void OnGUI()
         {
+            GetGUI(m_parameterCurve);
+        }
+
+
+
+
+        public void GetGUI(ParameterCurve instance)
+        {
+            SetPrarameterCurveInstance(instance);
+
+            if (m_parameterCurve == null) return;
+
+            Display();
+        }
+
+        private void SetPrarameterCurveInstance(ParameterCurve instance)
+        {
+            //m_parameterCurve = instance;
+
+            m_classData = EditorGUILayout.ObjectField("Class", m_classData, typeof(ClassData), false) as ClassData;
+            if (m_classData == null) return;
+            m_parameterCurve = m_classData.m_parameterCurve;
+            EditorGUILayout.Space();
+        }
+
+        private void Display()
+        {
             string[] parameterNames = Enum.GetNames(typeof(ParametersEnum));
             GUILayout.BeginHorizontal();
-            for (int i = 0; i< parameterNames.Length; i++)
+            for (int i = 0; i < parameterNames.Length; i++)
             {
                 if (GUILayout.Button(parameterNames[i]))
                 {
@@ -93,9 +118,7 @@ namespace GameAsset.Editor
                 }
                 m_parametersEnum = null;
             }
-
         }
-
 
         #endregion
 
