@@ -21,23 +21,23 @@ namespace GameAsset.Editor
 
         #region Main Methods
 
-        [MenuItem("Testing/test")]
+        [MenuItem("Testing/actor")]
         public static void ShowWindow()
         {
-            var window = GetWindow<GeneralParametersActorGUI>();
-            window.titleContent = new GUIContent("Tool");
+            GetWindow<GeneralParametersActorGUI>();
         }
 
         public void GetGUI()
         {
-            _actor = (ActorData)EditorGUILayout.ObjectField(_actor, typeof(ActorData), false);
-
             GUIStyle boldFontStyle = new()
             {
                 fontStyle = FontStyle.Bold,
             };
             boldFontStyle.normal.textColor = Color.white;
             GUILayout.Label("General Parameters", boldFontStyle);
+
+            _actor = (ActorData)EditorGUILayout.ObjectField(_actor, typeof(ActorData), false);
+            if (_actor is null) return;
 
             GUILayout.BeginHorizontal();
             NameField();
@@ -62,12 +62,7 @@ namespace GameAsset.Editor
         {
             GUILayout.BeginVertical();
             GUILayout.Label("Name:");
-            _nameTextField = _actor.m_generalParameters._name;
-            _nameTextField = EditorGUILayout.TextField(_nameTextField);
-            if (_actor.m_generalParameters._name != _nameTextField)
-            {
-                _actor.m_generalParameters._name = _nameTextField;
-            }
+            _actor.m_generalParameters._name = EditorGUILayout.TextField(_actor.m_generalParameters._name);
             GUILayout.EndVertical();
         }
 
