@@ -16,6 +16,8 @@ namespace GameAsset.Editor
         public AnimationCurve m_HPCurve = new AnimationCurve();
         public CurveHPMax m_curveHPMax;
 
+        public int m_level;
+        public int m_levelValue;
 
 
 
@@ -25,8 +27,15 @@ namespace GameAsset.Editor
         private void OnGUI()
         {
             //GenerateCurve(m_curveHPMax.m_minLvlValue, m_curveHPMax.m_maxLvlValue, m_HPCurve);
+
+            GUILayout.BeginHorizontal();
+            m_level = EditorGUILayout.IntField("Level : ", m_level);
+            m_levelValue = EditorGUILayout.IntField("Value : ", m_levelValue);
+            GUILayout.Button($"Generate Curve");
+            GUILayout.EndHorizontal();
+
             GenerateCurve(450, 3500, m_HPCurve);
-            m_HPCurve = EditorGUILayout.CurveField("HP Curve", m_HPCurve);
+            m_HPCurve = EditorGUILayout.CurveField(m_HPCurve);
 
         }
 

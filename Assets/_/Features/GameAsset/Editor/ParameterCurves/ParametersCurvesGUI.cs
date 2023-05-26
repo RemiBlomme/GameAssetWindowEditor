@@ -32,7 +32,8 @@ namespace GameAsset.Editor
         private void OnGUI()
         {
             string[] parameterNames = Enum.GetNames(typeof(ParametersEnum));
-            for(int i = 0; i< parameterNames.Length; i++)
+            GUILayout.BeginHorizontal();
+            for (int i = 0; i< parameterNames.Length; i++)
             {
                 if (GUILayout.Button(parameterNames[i]))
                 {
@@ -40,7 +41,14 @@ namespace GameAsset.Editor
 
                     m_parametersEnum = result;
                 }
+
+                if (i == 3)
+                {
+                    GUILayout.EndHorizontal();
+                    GUILayout.BeginHorizontal();
+                }
             }
+            GUILayout.EndHorizontal();
             if (m_parametersEnum != null)
             {
                 switch (m_parametersEnum)
