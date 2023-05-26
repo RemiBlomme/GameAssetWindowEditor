@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 namespace GameAsset.Editor
 {
-    public class ParametersGUI : MonoBehaviour
+    public class ParametersGUI : UnityEditor.EditorWindow
     {
         #region Public Members
         #endregion
@@ -14,7 +15,13 @@ namespace GameAsset.Editor
         #endregion
 
 
-        #region Private and Protected
+        #region Main Methods
+
+        public void ShowParameters()
+        {
+
+        }
+
         #endregion
     }
 }

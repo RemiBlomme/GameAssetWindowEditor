@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameAsset.Editor
 {
-    public class OtherGUI : MonoBehaviour
+    public class OtherGUI : UnityEditor.EditorWindow
     {
         #region Public Members
         #endregion
@@ -14,7 +14,13 @@ namespace GameAsset.Editor
         #endregion
 
 
-        #region Private and Protected
+        #region Main Methods
+
+        public void ShowOther()
+        {
+
+        }
+
         #endregion
     }
 }

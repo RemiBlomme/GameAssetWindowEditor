@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
 using UnityEditor;
+using UnityEngine;
 
 namespace GameAsset.Editor
 {
@@ -33,6 +31,16 @@ namespace GameAsset.Editor
 
 
         #region Unity API
+
+        private void OnEnable()
+        {
+            m_ratesGUI = CreateInstance<RatesGUI>();
+            m_paramGUI = CreateInstance<ParametersGUI>();
+            m_attackGUI = CreateInstance<AttackGUI>();
+            m_skillGUI = CreateInstance<SkillGUI>();
+            m_equipGUI = CreateInstance<EquipGUI>();
+            m_otherGUI = CreateInstance<OtherGUI>();
+        }
         private void OnGUI()
         {
             DisplayTraitsWindow();
@@ -63,22 +71,22 @@ namespace GameAsset.Editor
             switch (m_tabs)
             {
                 case TraitsTabs.Rates:
-                    ShowRates();
+                    m_ratesGUI.ShowRates();
                     break;
                 case TraitsTabs.Parameters:
-                    ShowParameters();
+                    m_paramGUI.ShowParameters();
                     break;
                 case TraitsTabs.Attack:
-                    ShowAttack();
+                    m_attackGUI.ShowAttack();
                     break;
                 case TraitsTabs.Skills:
-                    ShowSkills();
+                    m_skillGUI.ShowSkill();
                     break;
                 case TraitsTabs.Equip:
-                    ShowEquip();
+                    m_equipGUI.ShowEquip();
                     break;
                 case TraitsTabs.Other:
-                    ShowOther();
+                    m_otherGUI.ShowOther();
                     break;
                 default:
                     break;
@@ -88,40 +96,17 @@ namespace GameAsset.Editor
         #endregion
 
         #region Main Methods
+        #endregion
 
-        public void ShowRates()
-        {
-            EditorGUILayout.TextField("Rates");
-        }
+        #region Private and Protected
 
-        public void ShowParameters()
-        {
-            EditorGUILayout.TextField("Params");
+        RatesGUI m_ratesGUI;
+        ParametersGUI m_paramGUI;
+        AttackGUI m_attackGUI;
+        SkillGUI m_skillGUI;
+        EquipGUI m_equipGUI;
+        OtherGUI m_otherGUI;
 
-        }
-        public void ShowAttack()
-        {
-            EditorGUILayout.TextField("Attack");
-
-        }
-
-        public void ShowSkills()
-        {
-            EditorGUILayout.TextField("Skills");
-
-        }
-
-        public void ShowEquip()
-        {
-            EditorGUILayout.TextField("Equip");
-
-        }
-
-        public void ShowOther()
-        {
-            EditorGUILayout.TextField("Other");
-
-        }
         #endregion
     }
 }

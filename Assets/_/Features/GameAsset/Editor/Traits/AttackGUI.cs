@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace GameAsset.Editor
 {
-    public class AttackGUI : MonoBehaviour
+    public class AttackGUI : UnityEditor.EditorWindow
     {
         #region Public Members
         #endregion
@@ -12,7 +12,13 @@ namespace GameAsset.Editor
         #endregion
 
 
-        #region Private and Protected
+        #region Main Methods
+
+        public void ShowAttack()
+        {
+
+        }
+
         #endregion
     }
 }

@@ -22,45 +22,76 @@ MonoBehaviour:
     m_maxHP: 0
     m_maxMP: 0
   m_traits:
-    m_rates:
-      m_percentageBase: 0
+  - m_rates:
       m_elementTypes: {fileID: 0}
-      m_percentageElements: 0
+      m_percentageElements: 100
       m_debuffRate: 0
-      m_percentageDebuffRate: 0
+      m_percentageDebuffRate: 100
       m_state: 0
-      m_percentageState: 0
+      m_percentageState: 100
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
-      m_percentageParametre: 0
-      m_exParameter: 1
-      m_percentageExParam: 0
+      m_percentageParametre: 184
+      m_exParameter: 0
+      m_percentageExParam: 218
       m_spParameter: 0
-      m_percentageSpParam: 0
+      m_percentageSpParam: 100
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
-      m_percentageAttack: 0
+      m_percentageAttack: 100
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
+      m_actionTimes: 0
+      m_specialFlag: 0
+      m_collapseEffect: 0
+      m_partyAbility: 0
+  - m_rates:
+      m_elementTypes: {fileID: 11400000, guid: 976938f2c91c2db48aef49afe125ca28, type: 2}
+      m_percentageElements: 263
+      m_debuffRate: 0
+      m_percentageDebuffRate: 82
+      m_state: 0
+      m_percentageState: 100
+      m_resistState: 0
+    m_params:
+      m_parametre: 0
+      m_percentageParametre: 100
+      m_exParameter: 0
+      m_percentageExParam: 100
+      m_spParameter: 0
+      m_percentageSpParam: 100
+    m_attack:
+      m_elementTypesAttack: {fileID: 0}
+      m_stateAttack: 0
+      m_percentageAttack: 100
+      m_attackSpeed: 0
+      m_attackTimes: 0
+    m_comp:
+      m_skillTypes: {fileID: 0}
+      m_skillTypesSeal: {fileID: 0}
+      m_skills: {fileID: 0}
+      m_skillsSeal: {fileID: 0}
+    m_equip:
+      m_weaponTypes: {fileID: 0}
+      m_armorTypes: {fileID: 0}
+      m_equipmentTypes: {fileID: 0}
+      m_equipmentTypesSeal: {fileID: 0}
+      m_slotType: 0
+    m_other:
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0

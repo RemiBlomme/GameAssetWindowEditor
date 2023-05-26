@@ -17,7 +17,7 @@ namespace GameAsset.Editor
 
         #region Main Methods
 
-        public  void ShowRates()
+        public void ShowRates()
         {
             Debug.Log("ui");
             EditorGUILayout.TextField("yes");    
