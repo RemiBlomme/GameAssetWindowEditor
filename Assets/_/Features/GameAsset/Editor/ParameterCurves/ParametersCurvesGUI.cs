@@ -14,7 +14,7 @@ namespace GameAsset.Editor
 
         #region Public Members
 
-        public ParametersEnum m_parametersEnum;
+        public ParametersEnum? m_parametersEnum = null;
 
         #endregion
 
@@ -29,12 +29,6 @@ namespace GameAsset.Editor
             window.titleContent.text = "Parameters Curves";
         }
 
-        //private void HPMax()
-        //{
-        //    var windowHPMax = GetWindow<CurveHPMaxGUI>();
-        //    windowHPMax.titleContent.text = "HP Max";
-        //}
-
         private void OnGUI()
         {
             string[] parameterNames = Enum.GetNames(typeof(ParametersEnum));
@@ -43,40 +37,53 @@ namespace GameAsset.Editor
                 if (GUILayout.Button(parameterNames[i]))
                 {
                     Enum.TryParse<ParametersEnum>(parameterNames[i], out ParametersEnum result);
+
                     m_parametersEnum = result;
                 }
             }
-            switch (m_parametersEnum)
+            if (m_parametersEnum != null)
             {
-                case ParametersEnum.HPMax:
-                    //HPMax();
-                    break;
+                switch (m_parametersEnum)
+                {
+                    case ParametersEnum.HPMax:
+                        var windowHPMax = GetWindow<CurveHPMaxGUI>();
+                        windowHPMax.titleContent.text = "HP Max";
+                        break;
 
-                case ParametersEnum.MPMax:
+                    case ParametersEnum.MPMax:
+                        var windowMPMax = GetWindow<CurveMPMaxGUI>();
+                        windowMPMax.titleContent.text = "MP Max";
+                        break;
 
-                    break;
+                    case ParametersEnum.Attack:
+                        var windowAttack = GetWindow<CurveAttackGUI>();
+                        windowAttack.titleContent.text = "Attack";
+                        break;
+                    case ParametersEnum.Defense:
+                        var windowDefense = GetWindow<CurveDefenseGUI>();
+                        windowDefense.titleContent.text = "Defense";
+                        break;
 
-                case ParametersEnum.Attack:
+                    case ParametersEnum.MagicAttack:
+                        var windowMagicAttack = GetWindow<CurveMagicAttackGUI>();
+                        windowMagicAttack.titleContent.text = "Magic Attack";
+                        break;
 
-                    break;
-                case ParametersEnum.Defense:
+                    case ParametersEnum.MagicDefense:
+                        var windowMagicDefense = GetWindow<CurveMagicDefenseGUI>();
+                        windowMagicDefense.titleContent.text = "Magic Defense";
+                        break;
+                    case ParametersEnum.Agility:
+                        var windowAgility = GetWindow<CurveAgilityGUI>();
+                        windowAgility.titleContent.text = "Agility";
+                        break;
 
-                    break;
-
-                case ParametersEnum.MagicAttack:
-
-                    break;
-
-                case ParametersEnum.MagicDefense:
-
-                    break;
-                case ParametersEnum.Agility:
-
-                    break;
-
-                case ParametersEnum.Luck:
-
-                    break;
+                    case ParametersEnum.Luck:
+                        var windowLuck = GetWindow<CurveLuckGUI>();
+                        windowLuck.titleContent.text = "Luck";
+                        break;
+                }
+                m_parametersEnum = null;
             }
 
         }
