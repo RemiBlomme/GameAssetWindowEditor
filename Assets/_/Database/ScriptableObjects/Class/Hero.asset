@@ -71,7 +71,6 @@ MonoBehaviour:
     m_comment: []
   m_traits:
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -80,7 +79,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 0
@@ -88,33 +86,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 100
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -123,7 +116,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 0
@@ -131,33 +123,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -166,7 +153,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 1
@@ -174,33 +160,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -209,7 +190,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 2
@@ -217,33 +197,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -252,7 +227,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 1
@@ -260,33 +234,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 11400000, guid: d3f5b8da81f5b5540be2b13017126bc0, type: 2}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -295,7 +264,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 1
@@ -303,33 +271,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 11400000, guid: 803b365996e7f874688f7ceb8e618e7d, type: 2}
       m_armorTypes: {fileID: 0}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -338,7 +301,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 1
@@ -346,33 +308,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 11400000, guid: ae6b32dfbf60bbd4e948606bf8e541ac, type: 2}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -381,7 +338,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 1
@@ -389,33 +345,28 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 11400000, guid: f71896136de71f042b882821171708a7, type: 2}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0
       m_partyAbility: 0
   - m_rates:
-      m_percentageBase: 0
       m_elementTypes: {fileID: 0}
       m_percentageElements: 0
       m_debuffRate: 0
@@ -424,7 +375,6 @@ MonoBehaviour:
       m_percentageState: 0
       m_resistState: 0
     m_params:
-      m_percentageBase: 0
       m_parametre: 0
       m_percentageParametre: 0
       m_exParameter: 1
@@ -432,27 +382,23 @@ MonoBehaviour:
       m_spParameter: 0
       m_percentageSpParam: 0
     m_attack:
-      m_percentageBase: 0
       m_elementTypesAttack: {fileID: 0}
       m_stateAttack: 0
       m_percentageAttack: 0
       m_attackSpeed: 0
       m_attackTimes: 0
     m_comp:
-      m_percentageBase: 0
       m_skillTypes: {fileID: 0}
       m_skillTypesSeal: {fileID: 0}
       m_skills: {fileID: 0}
       m_skillsSeal: {fileID: 0}
     m_equip:
-      m_percentageBase: 0
       m_weaponTypes: {fileID: 0}
       m_armorTypes: {fileID: 11400000, guid: 48460316c65519c4bbf5b2865957de19, type: 2}
       m_equipmentTypes: {fileID: 0}
       m_equipmentTypesSeal: {fileID: 0}
       m_slotType: 0
     m_other:
-      m_percentageBase: 0
       m_actionTimes: 0
       m_specialFlag: 0
       m_collapseEffect: 0

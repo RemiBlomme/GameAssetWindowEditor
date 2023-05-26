@@ -26,9 +26,18 @@ namespace GameAsset.Editor
             var window = GetWindow<ParametersCurvesGUI>();
             window.titleContent.text = "Parameters Curves";
         }
-
+        private void OnEnable()
+        {
+            _curveHPMaxGUI = CreateInstance<CurveHPMaxGUI>();
+        }
+        CurveHPMaxGUI _curveHPMaxGUI;
+        public CurveHPMax m_curveHPMaxData;
         private void OnGUI()
         {
+            if (_curveHPMaxGUI != null)
+            {
+                _curveHPMaxGUI.Initialize(m_curveHPMaxData);
+            }
             GetGUI(m_parameterCurve);
         }
 
