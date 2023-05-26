@@ -1,8 +1,5 @@
-using Codice.Client.Common.GameUI;
 using GameAsset.Runtime;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -66,6 +63,12 @@ namespace GameAsset.Editor
 
         public void Display()
         {
+            _object = (ObjectData)EditorGUILayout.ObjectField(_object, typeof(ObjectData), true);
+            if (_object == null)
+            {
+                return;
+            }
+            _effects = _object.m_effects[0];
             DisplayButtons();
         }
 
@@ -93,11 +96,68 @@ namespace GameAsset.Editor
                 case EffecsComponentsEnum.Other:
                     break;
             }
+
+            DisplayCloseButton();
         }
 
         private void DisplayRecovery()
         {
-            GUILayout.Label("Recovery");
+            EditorGUILayout.BeginHorizontal();
+            _hpRecoveryButton = EditorGUILayout.ToggleLeft("HP Recovery", _hpRecoveryButton);
+            if (_hpRecoveryButton)
+            {
+                EditorGUILayout.BeginVertical();
+                _effects.m_recovery.m_hpRecoveryPercentage = Mathf.Clamp(EditorGUILayout.FloatField(_effects.m_recovery.m_hpRecoveryPercentage), -100f, 100f);
+                _effects.m_recovery.m_hpRecoveryAmount = Mathf.Clamp(EditorGUILayout.IntField(_effects.m_recovery.m_hpRecoveryAmount), -999999, 999999);
+                EditorGUILayout.EndVertical();
+                _mpRecoveryButton = false;
+                _tpGainButton = false;
+            }
+            else
+            {
+                EditorGUILayout.Space();
+            }
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.BeginHorizontal();
+            _mpRecoveryButton = EditorGUILayout.ToggleLeft("MP Recovery", _mpRecoveryButton);
+            if (_mpRecoveryButton)
+            {
+                EditorGUILayout.BeginVertical();
+                _effects.m_recovery.m_mpRecoveryPercentage = Mathf.Clamp(EditorGUILayout.FloatField(_effects.m_recovery.m_mpRecoveryPercentage), -100f, 100f);
+                _effects.m_recovery.m_mpRecoveryAmount = Mathf.Clamp(EditorGUILayout.IntField(_effects.m_recovery.m_mpRecoveryAmount), -999999, 999999);
+                EditorGUILayout.EndVertical();
+                _hpRecoveryButton = false;
+                _tpGainButton = false;
+            }
+            else
+            {
+                EditorGUILayout.Space();
+            }
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.BeginHorizontal();
+            _tpGainButton = EditorGUILayout.ToggleLeft("TP Gain", _tpGainButton);
+            if (_tpGainButton)
+            {
+                _effects.m_recovery.m_tpGainAmount = Mathf.Clamp(EditorGUILayout.FloatField(_effects.m_recovery.m_tpGainAmount), 0, 100);
+                _hpRecoveryButton = false;
+                _mpRecoveryButton = false;
+            }
+            else
+            {
+                EditorGUILayout.Space();
+            }
+            EditorGUILayout.EndHorizontal();
+        }
+
+        private void DisplayCloseButton()
+        {
+            EditorGUILayout.Space(20);
+            EditorGUILayout.BeginHorizontal();
+            GUILayout.Button("OK");
+            GUILayout.Button("Cancel");
+            EditorGUILayout.EndHorizontal();
         }
 
         #endregion
@@ -107,6 +167,10 @@ namespace GameAsset.Editor
 
         private Effects _effects;
         private EffecsComponentsEnum _effecsComponentsEnum;
+        private bool _hpRecoveryButton = false;
+        private bool _mpRecoveryButton = false;
+        private bool _tpGainButton = false;
+        private ObjectData _object;
 
         #endregion
     }
