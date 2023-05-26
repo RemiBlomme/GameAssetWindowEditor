@@ -1,39 +1,81 @@
-using System.Collections;
-using System.Collections.Generic;
+using GameAsset.Runtime;
 using UnityEditor;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
 namespace GameAsset.Editor
 {
-    public class DamagesGUI : EditorWindow
+    public class DamagesGUI
     {
-        [MenuItem("Tools/Damages")]
-        public static void ShowWindow()
+        #region Main Methods
+
+        public void GetGUI(Damages damages)
         {
-            var window = GetWindow<DamagesGUI>();
-            window.titleContent = new GUIContent("Damages");
+            _damages = damages;
+
+            if (_damages == null) return;
+
+            Display();
         }
 
-        private void OnGUI()
+        private void Display()
         {
-            DamagesOnGUI();
-        }
+            // TITLE
 
-        public void DamagesOnGUI()
-        {
-            GUILayout.Label("Damages");
+            GUIStyle insertVarNameHere = new GUIStyle();
+            insertVarNameHere.fontStyle = FontStyle.Bold;
+            insertVarNameHere.normal.textColor = Color.white;
+            GUILayout.Label("Damages", insertVarNameHere);
 
+
+            //  TYPE
+
+            GUILayout.BeginHorizontal();
+            GUILayout.BeginVertical();
             GUILayout.Label("Type:");
-            _salut = (Salut)EditorGUILayout.EnumPopup(_salut);
+            _damages.m_damageType = (Damages.DamageType)EditorGUILayout.EnumPopup(_damages.m_damageType);
+            GUILayout.EndVertical();
+
+
+            //  ELEMENT
+
+            GUILayout.BeginVertical();
+            GUILayout.Label("Element:");
+            _damages.m_elementType = (ElementTypeData)EditorGUILayout.ObjectField(_damages.m_elementType, typeof(ElementTypeData), true);
+            GUILayout.EndVertical();
+            GUILayout.EndHorizontal();
+
+
+            //  FORMULA
+
+            GUILayout.Label("Formula:");
+            _damages.m_formula = EditorGUILayout.TextField(_damages.m_formula);
+
+
+            //  VARIANCE
+
+            GUILayout.BeginHorizontal();
+            GUILayout.BeginVertical();
+            GUILayout.Label("Variance:");
+            _damages.m_variance = Mathf.Clamp(EditorGUILayout.FloatField(_damages.m_variance), 0, 100);
+            GUILayout.EndVertical();
+
+
+            //  CRITICAL STRIKES
+
+            GUILayout.BeginVertical();
+            GUILayout.Label("Critical strikes:");
+            _damages.m_criticalHit = EditorGUILayout.Toggle(_damages.m_criticalHit);
+            GUILayout.EndVertical();
+            GUILayout.EndHorizontal();
         }
 
-        private enum Salut
-        {
-            test,
-            test2
-        }
+        #endregion
 
-        private Salut _salut = Salut.test;
+
+        #region Private and Protected Members
+
+        private Damages _damages;
+
+        #endregion
     }
 }
