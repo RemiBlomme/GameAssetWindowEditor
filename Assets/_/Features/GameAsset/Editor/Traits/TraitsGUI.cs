@@ -1,18 +1,12 @@
+using GameAsset.Runtime;
 using System;
 using UnityEditor;
 using UnityEngine;
 
 namespace GameAsset.Editor
 {
-    public class TraitsGUI : UnityEditor.EditorWindow
+    public class TraitsGUI : EditorWindow
     {
-        [MenuItem("Traits/MainTraitsWindow")]
-        public static void ShowWindow()
-        {
-            var window = EditorWindow.GetWindow<TraitsGUI>();
-            window.titleContent = new GUIContent("Traits", "C'est les traits mageule");
-        }
-
         public enum TraitsTabs
         {
             Rates,
@@ -23,9 +17,20 @@ namespace GameAsset.Editor
             Other
         }
 
+
+        [MenuItem("Traits/MainTraitsWindow")]
+        public static void ShowWindow()
+        {
+            var window = GetWindow<TraitsGUI>();
+            window.titleContent = new GUIContent("Traits", "C'est les traits magueule");
+            
+        }
+
         #region Public Members
 
         public TraitsTabs m_tabs = TraitsTabs.Rates;
+
+        public ActorData m_actor;
 
         #endregion
 
@@ -34,24 +39,60 @@ namespace GameAsset.Editor
 
         private void OnEnable()
         {
+            InstantiateTabs();
+        }
+
+        private void InstantiateTabs()
+        {
             m_ratesGUI = CreateInstance<RatesGUI>();
-            m_paramGUI = CreateInstance<ParametersGUI>();
+            m_paramGUI = CreateInstance<ParametersGUI>();          
             m_attackGUI = CreateInstance<AttackGUI>();
             m_skillGUI = CreateInstance<SkillGUI>();
             m_equipGUI = CreateInstance<EquipGUI>();
             m_otherGUI = CreateInstance<OtherGUI>();
         }
+
         private void OnGUI()
         {
+            InstanceCheck();
             DisplayTraitsWindow();
         }
+
+
         #endregion
 
 
         #region Main Methods
+        private void InstanceCheck()
+        {
+            if (m_paramGUI != null)
+            {
+                m_paramGUI.Initialize(m_paramsData);
+            }
+            if (m_attackGUI != null)
+            {
+                m_attackGUI.Initialize(m_attackData);
+            }
+            if (m_otherGUI != null)
+            {
+                m_otherGUI.Initialize(m_otherData);
+            }
+        }
 
         public void DisplayTraitsWindow()
         {
+            m_actor = EditorGUILayout.ObjectField("Actor", m_actor, typeof(ActorData), true) as ActorData;
+            if (m_actor == null) return;
+            m_paramsData = m_actor.m_traits.m_params;
+            m_ratesData = m_actor.m_traits.m_rates;
+            m_attackData = m_actor.m_traits.m_attack;
+            m_skillData = m_actor.m_traits.m_comp;
+            m_equipData = m_actor.m_traits.m_equip;
+            m_otherData = m_actor.m_traits.m_other;
+            EditorGUILayout.Space();
+
+
+
             var _names = Enum.GetNames(typeof(TraitsTabs));
 
             EditorGUILayout.BeginHorizontal();
@@ -99,6 +140,13 @@ namespace GameAsset.Editor
         #endregion
 
         #region Private and Protected
+
+        public Params m_paramsData;
+        public Rates m_ratesData;
+        public Attack m_attackData;
+        public Comp m_skillData;
+        public Equip m_equipData;
+        public Other m_otherData;
 
         RatesGUI m_ratesGUI;
         ParametersGUI m_paramGUI;
