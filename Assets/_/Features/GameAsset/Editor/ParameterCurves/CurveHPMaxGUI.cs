@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
+using GameAsset.Runtime;
 
 namespace GameAsset.Editor
+
 {
     public class CurveHPMaxGUI : EditorWindow
     {
 
         #region Public Members
+        
+        public AnimationCurve m_HPCurve = new AnimationCurve();
+        public CurveHPMax m_curveHPMax;
+
+
 
 
 
@@ -17,21 +24,14 @@ namespace GameAsset.Editor
 
         private void OnGUI()
         {
-            
+            //GenerateCurve(m_curveHPMax.m_minLvlValue, m_curveHPMax.m_maxLvlValue, m_HPCurve);
+            GenerateCurve(450, 3500, m_HPCurve);
+            m_HPCurve = EditorGUILayout.CurveField("HP Curve", m_HPCurve);
+
         }
 
         #region Unity API
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+     
         #endregion
         #region Main Methods
 
