@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c717f7d686df2924a999b3874acd1d27, type: 3}
   m_Name: Guard
   m_EditorClassIdentifier: 
-  m_skill:
+  m_generalParameters:
     _name: 
     m_icone: {fileID: 0}
     m_description: 
@@ -22,7 +22,7 @@ MonoBehaviour:
     m_applicationField: 0
     m_usageCondition: 0
   m_summon:
-    m_speed: 0
+    m_speed: 5
     m_success: 0
     m_repeat: 0
     m_tpGain: 0
@@ -42,19 +42,24 @@ MonoBehaviour:
     m_criticalHit: 0
   m_effects:
     m_recovery:
-      m_recoveryType: 0
-      m_recoveryPercentage: 0
-      m_recoveryAmount: 0
+      m_hpRecoveryPercentage: 100
+      m_hpRecoveryAmount: 0
+      m_mpRecoveryPercentage: 100
+      m_mpRecoveryAmount: 0
+      m_tpGainAmount: 0
     m_states:
-      m_stateAction: 0
-      m_state: 0
-      m_probability: 0
+      m_addState: 0
+      m_addProbability: 0
+      m_removeState: 0
+      m_removeProbability: 0
     m_effectsParameters:
-      m_action: 0
-      m_parameter: 0
-      m_numberOfRounds: 0
+      m_addBuffParameter: 0
+      m_addBuffNumberOfRounds: 0
+      m_addDebuffParameter: 0
+      m_addDebuffNumberOfRounds: 0
+      m_removeBuffParameter: 0
+      m_removeDebuffParameter: 0
     m_other:
-      m_otherEffectType: 0
       m_specialEffect: 0
       m_parametersEnum: 0
       m_growAmount: 0
